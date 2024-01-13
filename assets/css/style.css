@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* universal operators */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+/* global classes */
+body{height: 100vh;width: 100%;background:linear-gradient(45deg,#353131e3,#2b28288c),url('../images/hero/1.jpg');background-size: cover;background-attachment: fixed;background-position: center;}
+body .cta{text-decoration: none;border: 1px solid #fff;padding: 5px 40px;font-size: 13px;border-radius: 40px;font-weight: 600;letter-spacing: .5px;}
+body .md-header{font-size: 35px;}
+body .md-des{width: 35%;font-size: 14px;color: #888888;font-family: 'Times New Roman', Times, serif;}
+
+/* navbrand -> logo */
+.navbar-brand{position: relative;}
+.navbar-brand img{position: absolute;bottom: -10px}
+
+/* navbar with scrolled class */
+.top-navbar.scrolled {background-color: #fff !important;transition: background-color 200ms linear;box-shadow: #0000003d 0px 3px 8px;}
+.top-navbar.scrolled .links{color: #2c2c2c;text-decoration: none;font-weight: 600;}
+.top-navbar.scrolled .links:hover{color: #daa92f;}
+
+/* menu button  */
+.menu-btn{outline: none;border: 1px solid #daa92f;border-radius: 0px;}
+.menu-btn i{color: #f5af00;padding: 5px;}
+
+/* menu links  */
+.links{color: #dfdfdf;text-decoration: none;font-weight: 600;font-size: 12px;}
+.links.active{color: #daa92f;}
+.links:hover{color: #f5af00;}
+
+/* hero banner  */
+.hero-banner{height: 100vh;}
+.hero-banner .hero-head{font-size: 80px;}
+.hero-banner .hero-des{font-family: 'Times New Roman', Times, serif;font-size: 22px;}
+.hero-banner .hero-cta{background-color: #f5af00;color: #fff;border: none;transition: .3s;}
+.hero-banner .hero-cta:hover{background-color: #333333;}
+
+/* card section prperty */
+.card-icon i{padding: 20px 10px;font-size: 30px;color: #f5af00;}
+.card-title{font-weight: 400;font-size: 20px;}
+.card-text{color: #00000093;font-size: 13px;}
+
+
+/* service banner  */
+.service-banner{background-color: #fff;}
+.features-banner{background-color: #f8f8f8;}
+.features-img-content img{width: 100%;cursor: pointer;transition: .5s;}
+.features-img-content .img-con{position: relative;cursor: pointer;}
+.features-img-content .img-con img{overflow: hidden;}
+.features-img-content .img-overlay{position: absolute;top:0;left:0;background-color: #f4b109e8;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;font-size: 45px;color: #fff;display: none;transition: .4s;}
+.features-img-content .img-con:hover .img-overlay{display: flex;}
+.features-img-content .img-con:hover .img-con>img{scale: 1.2;}
+
+/* two column layout  */
+.two-col-layout{background-color: #fff;}
+.two-col-layout .field-header{font-size: 35px;}
+.two-col-layout .field-des{font-size: 15px;font-family: 'Times New Roman', Times, serif;}
+.two-col-layout .survey{font-size: 14px;}
+.two-col-layout .progess input{display: block;width: 100%;color: #daa92f;background: #daa92f;}
+.two-col-layout .progess input::-webkit-slider-runnable-track{color: #daa92f;height: 1rem;}
+.two-col-layout .progess input{-webkit-appearance: none;background-color:#d4d4d4;color: #daa92f;height: 8px;border-radius: 5px;}
+.two-col-layout .progess input::-webkit-slider-thumb{-webkit-appearance: none;display: none;}
+.two-col-layout .progess input::-moz-range-progress{color: #daa92f;}
+
+/* adverstisement layout  */
+.ad-layout{display: flex;background-color: #f5af00;text-align: center;align-items: center;justify-content: space-between;}
+.ad-layout p{font-size: 32px;color: #fff;}
+.ad-layout a{background-color: transparent;color: #fff;padding: 13px 25px;transition: .5s;}
+.ad-layout a:hover{background-color: #fff;color: #daa92f;}
+
+/* testimonial layouts */
+.testimonial{background-color: #fff;}
+.testimonial .quotes{font-family: 'Times New Roman', Times, serif;font-size: 20px;color: #00000093;}
+.testimonial .name{font-weight: 600;}
+
+/* footer  */
+.footer{background-color: #fff;border-top: 1px solid #9b9b9b77;}
+.copyrights{color: #00000093;font-size: 15px;width: 100%;display: flex;justify-content: center;}
+.copyrights .link i{margin: 0px 10px;}
+
+
+/* media query for 998px screen  */
+@media screen and (max-width: 998px) {
+    body .md-header{font-size: 25px;}
+    body .md-des{width: 70%;font-size: 14px;color: #888888;font-family: 'Times New Roman', Times, serif;}
+    .top-navbar{background-color: #fff !important;transition: background-color 200ms linear;box-shadow: #0000003d 0px 3px 8px;}
+    .top-navbar ul li{color: #000;text-decoration: none;font-weight: 600;margin: 10px;}
+    .top-navbar ul li a{color: #000;}
+    .hero-banner .hero-head{font-size: 40px;}
+    .hero-banner .hero-des{font-size: 15px;}
+    .hero-banner .hero-cta{background-color: #f5af00;color: #fff;border: none;transition: .3s;}
+    .logo-img{display: none;}
+    .service-card-layout{display: flex;align-items: center;}
+    .card{display: flex;justify-content: center;align-items: center;}
+}
+
+/* media query for 576px screen  */
+@media screen and (max-width: 567px){
+    .hero-banner{height: 70vh;}
+    .hero-banner .hero-head{font-size: 30px;}
+    #card{width: 17rem;}
+}
