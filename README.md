@@ -1,8 +1,10 @@
-# Static responsive static template
+# Responsive static template
+### Codoid Technical Task
 
 > Mugesh Kannan - Full Stack Devloper
 
 **Construction Static Website**
+
 ```
 > 1 . Hero banner
 > 2 . Services
