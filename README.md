@@ -13,3 +13,6 @@
 > 5 . Testimonial
 > 6 . Contact
 ```
+
+
+This site was built using [GitHub Pages](https://github.com/mkannan2104/static_template).
