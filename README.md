@@ -1,4 +1,6 @@
 # Static responsive static template
-## Mugesh Kannan
+## My Info
+> Mugesh Kannan
+> MERN STACK DEVELOPER
 
 **This template build by HTML CSS JS**
